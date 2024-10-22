@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+}
+
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#micanvas{
+    border: 1.5px solid black;
+    margin-left: 50px;
+    
+}
+
+#area{
+    font-size: 40px;
+}
