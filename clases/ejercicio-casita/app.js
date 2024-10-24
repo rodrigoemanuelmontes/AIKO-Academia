@@ -1,39 +1,40 @@
-
-
-//creo una variable y busco el canvas creado en html
+// Obtengo el canvas creado en HTML
 let canvas = document.getElementById("casita");
 
-
-//Creo una variable y obtengo el contexto que va a renderizar y las funciones 
+// Obtengo el contexto para renderizar
 let context = canvas.getContext("2d");
 
-//el fillStyle define el color de relleno que se va a utilizar después de lo que se defina
-//con el método fillRect que es una función y no va con el ==
-context.fillStyle = "red";
+// Defino el color de relleno para la casa
+context.fillStyle = "yellow";
+context.fillRect(50, 250, 200, 200); // Cambié el alto a 200 para que la casa se vea mejor
 
-
-//(x,y,w,h)
-
-/**ejes
- * (x,y)
- * (0, 0) esquina superior izquierda
- * (0, 300) esquina inferior izquirda
-   (300, 0) esquina superior derecha
-   (300, 300) esquina inferior derecha   
-*/
-context.fillRect(50, 250, 200, 250);
-
-
+// Defino el color de relleno para la puerta
 context.fillStyle = "brown";
-context.fillRect(100, 350, 100, 150);
+context.fillRect(180, 350, 50, 100); // Ajusté la altura de la puerta
 
 
+// Dibujo el techo
 context.beginPath();
-context.moveTo(100, 100);
-context.lineTo(150, 150);
-context.lineTo(50, 250);
+context.moveTo(50, 250); // Esquina izquierda de la casa
+context.lineTo(150, 150); // Punta del techo
+context.lineTo(250, 250); // Esquina derecha de la casa
 context.closePath();
-context.fillStyle= "purple";
+context.fillStyle = "purple"; // Color del techo
 context.fill();
 context.stroke();
+
+// Dibujo picaporte de la puerta
+context.beginPath();
+// (x, y, radio, angulo inicial, angulo final, sentido horario)
+context.arc(220, 400, 4, 0, Math.PI * 2, false); 
+context.fillStyle = "yellow"; 
+context.fill();
+context.stroke();
+
+// Dibujo pasto verde debajo de la casita
+context.fillStyle = "green";
+context.fillRect(0, 450, 600, 50);
+
+context.fillStyle = "lightblue";
+context.fillRect(60, 350, 100,50);
 
