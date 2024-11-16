@@ -42,28 +42,14 @@ for (let y = 0; y < canvas.height; y += 10){
 /*pruebo el sistema de grilla con dibujos en canvas */
 
 
-ctx.beginPath();
-ctx.strokeStyle = "#FFFFFF";
-ctx.lineWidth = 2;
-ctx.moveTo(50, 50);
-drawCoordinate(ctx, 50, 50);
-ctx.lineTo(150, 250);
-drawCoordinate(ctx, 150, 250);
-ctx.lineTo(250,170);
-drawCoordinate(ctx, 250, 170);
-/*función que conecta el último punto dibujado con el primero para cerrar la figura */
-ctx.closePath();
-ctx.stroke();
 
 
 /*Dibuja una coordenada gracias a que tiene un fillStyle*/
 function drawCoordinate( ctx, x ,y){
 
     ctx.fillStyle = "#00FF00";
+    //TEMPLATE LITERAL, ENTRE COMILLAS ${TRAEMOS LOS VALORES} SIN NECESIDAD DE ESCRIBIR TANTO CODIGO
     ctx.fillText(`(${x},${y})`, x , y);
 }
-
-
-
 
 

@@ -35,6 +35,7 @@ context.stroke();
 context.fillStyle = "green";
 context.fillRect(0, 450, 600, 50);
 
+//Dibujo la ventana 
 context.fillStyle = "lightblue";
 context.fillRect(60, 350, 100,50);
 
