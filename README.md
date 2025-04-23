@@ -12,13 +12,13 @@ Durante este curso, trabajamos en diversos ejercicios que nos permitieron aprend
 - **CSS3**
 - **JavaScript (DOM Manipulation)**
 
-
 ## 🤝 Contribuciones
 
 Si deseas contribuir o adaptar este repositorio:
 
 1. Haz un fork del repositorio.
-2. Clónalo: `git clone https://github.com/tuusuario/tu-repo.git`
+2. Clónalo con el siguiente comando:  
+   `git clone https://github.com/rodrigoemanuelmontes/AIKO-Academia.git`
 3. Realiza tus modificaciones.
 4. Envía un pull request con tus cambios.
 
